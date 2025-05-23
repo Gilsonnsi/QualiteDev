@@ -19,4 +19,11 @@ public class CalculatriceTest {
     public void testDiv() {
         assertEquals(10.0f, calc.div(20.0f, 2.0f), 0.001f);
     }
+
+    @Test
+    public void testDivParZero() {
+        assertThrows(ArithmeticException.class, () -> {
+            calc.div(6.0f, 0.0f);
+        });
+    }
 }
