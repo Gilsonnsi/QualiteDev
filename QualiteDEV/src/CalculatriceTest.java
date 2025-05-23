@@ -26,4 +26,10 @@ public class CalculatriceTest {
             calc.div(6.0f, 0.0f);
         });
     }
+
+    @Test
+    public void testMult(){
+        assertEquals(90.0f,calc.mult(45.0f, 2.0f), 0.001f);
+    }
+
 }
