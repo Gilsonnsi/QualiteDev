@@ -32,4 +32,10 @@ public class CalculatriceTest {
         assertEquals(90.0f,calc.mult(45.0f, 2.0f), 0.001f);
     }
 
+    @Test
+    public void testMinus(){
+        assertEquals(5.0f,calc.minus(9.0f, 4.0f), 0.001f);
+        assertEquals(-5.0f,calc.minus(4.0f, 9.0f), 0.001f);
+    }
+
 }
